@@ -1,5 +1,6 @@
 package com.CarProject;
 
+//This class makes decisions of what to output based on information about the car
 public abstract class Car implements ICar {
 	
 	protected double engineVolume;
@@ -9,12 +10,13 @@ public abstract class Car implements ICar {
 	protected int fast;
 	protected int normal;
 	
+	//Returns a string depending on the velocity given
 	@Override
 	public String getMessage(int velocity)
 	{
 		if(velocity > fast)
 		{
-			return "Hýzlý";
+			return "HÃ½zlÃ½";
 		}
 		else if(velocity >= normal)
 		{
@@ -22,19 +24,19 @@ public abstract class Car implements ICar {
 		}
 		else
 		{
-			return "Yavaþ";
+			return "YavaÃ¾";
 		}
 	}
 		
 	
-
 	@Override
 	public int getPrice() {
 		
 		return price;
 	}
 	
-
+	//Returns fuel consumption based on the velocity and time by calculating total distance, and the fuel consumtion per 100 kms
+	//for the specified car.
 	@Override
 	public double getFuelConsumption(int velocity, double time) {
 		
