@@ -1,5 +1,6 @@
 package com.CarProject;
 
+//This class creates objects from Car for the air conditioning and automatic shift
 public class Decorator extends Car {
 	
 	ICar car;
