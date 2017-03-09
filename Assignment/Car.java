@@ -1,6 +1,6 @@
 package com.CarProject;
 
-//This class makes decisions of what to output based on information about the car
+//This class makes decisions of what to output based on information about the car, which is specified in one of the EA classes
 public abstract class Car implements ICar {
 	
 	protected double engineVolume;
@@ -29,6 +29,7 @@ public abstract class Car implements ICar {
 	}
 		
 	
+	// Returns the price of the car
 	@Override
 	public int getPrice() {
 		
@@ -45,11 +46,13 @@ public abstract class Car implements ICar {
 			throw new RuntimeException("Values of velocity and/or time cannot be lower than zero.");
 		}
 		
+		//Calculates the total distance and consumption per km to get the fuel consumption
 		double totalDistance = velocity * time;
 		double consumptionPerKm = fuelConsumptionPer100km / 100;
 		return totalDistance * consumptionPerKm;
 	}
-
+	
+	
 	@Override
 	public double getEngineVolume() {
 		
