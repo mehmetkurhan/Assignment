@@ -1,6 +1,9 @@
 package com.CarProject;
 
-// This is the base class of the program. 
+// This is the base class of the program.
+// This application takes information from the assigned class which contains information about the car.
+// It calculates the price, fuel consumption and the price when adding air conditioning or automatic shift as well 
+//a message based on the velocity.
 public class CarProjectTest {
 
 	public static void main(String[] args) {
