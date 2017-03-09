@@ -1,5 +1,7 @@
 package com.CarProject;
 
+//This class adds 1000 to the price of the car
+//This class is used in the case that the car has airconditioning added
 public class AirConditionerDecorator extends Decorator {
 	
 	

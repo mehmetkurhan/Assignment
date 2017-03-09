@@ -1,5 +1,6 @@
 package com.CarProject;
 
+//Interface for the car information
 public interface ICar {
 	
 	

@@ -1,5 +1,6 @@
 package com.CarProject;
 
+//This class returns the decorator objects for air conditioning and automatic shift
 public class CarDecorator {
 	/**
 	 * Adds air conditioning to a given car
@@ -15,7 +16,7 @@ public class CarDecorator {
 	/**
 	 * Adds auto shift to a given car
 	 * 
-	 * @param car car to be modified
+	 * @param car to be modified
 	 * @return modified car
 	 */
 	public static ICar addAutoShift(ICar car){

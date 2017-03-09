@@ -1,5 +1,7 @@
 package com.CarProject;
 
+//This class sets the information about the car EA200
+//This information is used to calculate the information printed from CarProjectTest
 public class EA200 extends Car {
 	
 	public EA200()

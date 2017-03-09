@@ -1,6 +1,6 @@
 package com.CarProject;
 
-
+//This class returns the class corresponding to the string from the CarProjectTest class
 public class CarFactory implements ICarFactory {
 
 	@Override
@@ -20,7 +20,8 @@ public class CarFactory implements ICarFactory {
 		}
 		else
 		{
-			throw new RuntimeException("There is no such car type.");
+			//if the car type does not exist gives an error
+			throw new RuntimeException("There is no such car type."); 
 			
 		}
 	}
